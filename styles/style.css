@@ -1,122 +1,134 @@
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
-
 :root {
-  --pokedex-red : #de3539;
-  --pokedex-white: #dedede;
-}
-
-* {
-  margin: 0;
-  padding: 0;
+    --pokedex-red: #be1a1a;
+    --pokedex-white: #dedede;
 }
 
 body {
-  font-family: 'IM Fell English SC', serif;
-  height: 100vh;
-  background-color: var(--pokedex-red);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    font-family: 'IM Fell English SC', serif;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(12, 12, 12, 0.966);
 }
 
 .title {
-  text-align: center;
-  font-size: 3em;
+    text-align: center;
+    font-size: 3em;
+    color: honeydew;
+    text-shadow: 10px 5px 5px black;
 }
 
 .main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 80vh; /*Viewport height*/
-  width: 90%;
-  margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.main .inputFields,
-.main .pokemonData {
-  width: 50%;
+.inputFields {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
 }
 
-.main .inputFields {
-  display: flex;
-  flex-direction: column;
-  font-size: 2rem;
-  text-align: center;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-}
-
-.main input {
-  margin: 0;
-  padding: 0;
+input {
+    margin: 0;
+    padding: 0;
+    box-shadow: 10px 5px 5px black;
+    font-size: 1rem;
 }
 
 .inputFields input {
-  font-size: 1.5rem;
-  border-radius: 10px;
-  font-family: 'IM Fell English SC', serif;
-  text-align: center;
+    height: 5vh;
+    width: 50vw;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    font-family: 'IM Fell English SC', serif;
+    text-align: center;
 }
 
 .inputFields .buttons {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
 }
 
 .inputFields .buttons img {
-  width: 50px;
-  cursor: pointer;
+    width: 30px;
+    cursor: pointer;
+    background-color: var(--pokedex-white);
+    padding: 0.5rem;
+    border-radius: 90px;
 }
 
 .pokemonData {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    /* flex-direction: column; */
 }
 
 .pokemonData .container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border: 1px solid black;
-  background-color: var(--pokedex-white);
-  margin-block-end: 20px;
-  border-radius: 5px;
-  padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+    background-color: var(--pokedex-white);
+    border-radius: 50px;
+    padding: 10px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    box-shadow: 10px 5px 5px black;
 }
 
 .pokemonData .container:hover {
-  cursor: pointer;
-  background-color: rgb(121, 255, 255);
+    cursor: pointer;
+    background-color: rgb(255, 121, 121);
 }
 
 .pokemonData .container img {
-  width: 70%;
-  margin: 0 auto;
+    width: 60%;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .pokemonData .container h2 {
-  text-align: center;
-  text-transform: uppercase;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin: 0;
 }
 
 .pokemonData .container .pokemonStatsContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  place-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    border-radius: 50px;
+    padding: 10px;
 }
 
 .pokemonData .container .pokemonStatsContainer p {
-  box-sizing: border-box;
-  border: 1px solid black;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  font-size: 1.2rem;
+    box-sizing: border-box;
+    border: 1px dotted black;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    padding: 10px;
+    height: 60%;
+    width: 100%;
+}
+
+footer {
+    color: var(--pokedex-white);
+    font-family: 'IM Fell English SC', serif;
 }
